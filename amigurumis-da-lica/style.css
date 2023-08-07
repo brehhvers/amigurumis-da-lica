@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+body{
+    background-color: #FFDAF0;
+}
+
+.centralizadora {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header{
+    background-color: #E8BABE;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+}
+
+header > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+
+header li{
+    /* background-color: aqua; */
+    list-style: none;
+    padding: 20px;
+    font-size: 1em;
+}
+
+header ul{
+display: flex;
+}
+
+
+
+n
