@@ -1,0 +1,138 @@
+:root{
+    --color-primary: #FFDAF0;
+    --color-secondary: #E8BABE;
+    --color-terciary: #FFD2CC;
+    --color-dark: #6D2537;
+    --color-shadow: rgba(128,108,120,0.25);
+    --color-carousel-dark: rgba(128,70, 105, 0.5);
+    --color-carousel-light: rgba(222,200,251,0);
+    --color-icons: #F8BEC7;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+body{
+    background-color: var(--color-primary);
+}
+
+
+
+
+header{
+    background-color: var(--color-secondary);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    box-shadow: 0px 4px 20px 0px var(--color-shadow);
+
+}
+
+header > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    
+    
+}
+
+
+header li{
+    /* background-color: aqua; */
+    list-style: none;
+    padding: 20px;
+}
+
+header ul{
+    display: flex;
+}
+
+#center-navbar {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+navbar{
+    background-color: var(--color-terciary);
+    width: 80vw;
+    height: 70px;
+    box-shadow: 0px 4px 20px 0px var(--color-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}  
+
+navbar > div{
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+navbar > div div{
+width: 320px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+/* Filtro NAVBAR */
+#genre-filter {
+    height: 30px;
+    width: 300px;
+    background-color: rgba(255, 250, 250, 0.5);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding: 3px;
+}
+
+#genre-filter::placeholder{
+    font-style: italic;
+    color: rgba(192, 192, 192, 1);
+    opacity: 0.7;
+    transition: .2s;
+}
+
+#genre-filter::placeholder:hover{
+    opacity: 1;
+}
+
+
+/* Filtro de preço */
+#price-filter{
+    -webkit-appearance: none;
+    background-color: #f8f8f8;
+    height: 5px;
+    border-radius: 5px;
+    width: 200px;
+    opacity: 0.7;
+    transition: .2s;
+}
+
+#price-filter:hover{
+    opacity: 1;
+}
+
+#price-filter::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: var(--color-dark);
+    cursor: pointer;
+    border-radius: 10px;
+    border: none
+  }
