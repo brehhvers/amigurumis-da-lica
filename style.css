@@ -1,29 +1,52 @@
-:root{
+:root {
     --color-primary: #FFDAF0;
     --color-secondary: #E8BABE;
     --color-terciary: #FFD2CC;
     --color-dark: #6D2537;
-    --color-shadow: rgba(128,108,120,0.25);
-    --color-carousel-dark: rgba(128,70, 105, 0.5);
-    --color-carousel-light: rgba(222,200,251,0);
-    --color-icons: #F8BEC7;
+    --color-shadow: rgba(128, 108, 120, 0.25);
+    --color-carousel-dark: rgba(128, 70, 105, 0.5);
+    --color-carousel-light: rgba(222, 200, 251, 0);
+    --color-icons: #f4c1c1;
+
 }
 
-*{
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+   
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: var(--color-carousel-dark);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #82384b; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4d1422; 
+  }
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Dosis', sans-serif;
 }
 
-body{
+body {
     background-color: var(--color-primary);
 }
 
 
 
 
-header{
+header {
     background-color: var(--color-secondary);
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -34,23 +57,22 @@ header{
 
 }
 
-header > div{
+header>div {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 80vw;
-    
-    
+
+
 }
 
 
-header li{
-    /* background-color: aqua; */
+header li {
     list-style: none;
     padding: 20px;
 }
 
-header ul{
+header ul {
     display: flex;
 }
 
@@ -60,10 +82,10 @@ header ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-navbar{
+navbar {
     background-color: var(--color-terciary);
     width: 80vw;
     height: 70px;
@@ -71,21 +93,21 @@ navbar{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-}  
 
-navbar > div{
+}
+
+navbar>div {
     width: 70vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-navbar > div div{
-width: 320px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+navbar>div div {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Filtro NAVBAR */
@@ -99,21 +121,22 @@ align-items: center;
     padding: 3px;
 }
 
-#genre-filter::placeholder{
+#genre-filter::placeholder {
     font-style: italic;
     color: rgba(192, 192, 192, 1);
     opacity: 0.7;
     transition: .2s;
 }
 
-#genre-filter::placeholder:hover{
+#genre-filter::placeholder:hover {
     opacity: 1;
 }
 
 
 /* Filtro de preço */
-#price-filter{
+#price-filter {
     -webkit-appearance: none;
+    appearance: none;
     background-color: #f8f8f8;
     height: 5px;
     border-radius: 5px;
@@ -122,7 +145,7 @@ align-items: center;
     transition: .2s;
 }
 
-#price-filter:hover{
+#price-filter:hover {
     opacity: 1;
 }
 
@@ -135,4 +158,96 @@ align-items: center;
     cursor: pointer;
     border-radius: 10px;
     border: none
-  }
+}
+
+/* Corpo */
+main{
+    height: 150vh;
+}
+
+
+/* Rodapé */
+
+footer {
+    color: #f8f8f8;
+    background-color: var(--color-dark);
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+footer > div{
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+footer label {
+    font-family: 'Marcellus SC', serif;
+    font-weight: 100;
+}
+
+#footer-span-logo {
+    font-family: 'Moon Dance', cursive;
+    font-size: 2em;
+}
+
+#footer-contact{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-contact div{
+    display: flex;
+    align-items: center;
+}
+
+footer > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer-contact > div{
+    /* border: solid 2px cyan; */
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    margin: 7px;
+}
+
+#footer-contact div svg{
+    fill: var(--color-icons)
+}
+
+footer div div ul li span{
+    font-family: 'Marcellus SC', serif;
+}
+
+footer div div ul li {
+    list-style: none;
+    line-height: 2em;
+}
+
+#footer-language{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-language label{
+    font-family: 'Dosis', sans-serif;
+}
+
+#footer-laguage-margin{
+    margin-top: 15px;
+}
+
+#footer-4 img{
+    transform: scale(1.5);
+    position: relative;
+    top: -128px
+}
