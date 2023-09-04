@@ -7,30 +7,36 @@
     --color-carousel-dark: rgba(128, 70, 105, 0.5);
     --color-carousel-light: rgba(222, 200, 251, 0);
     --color-icons: #f4c1c1;
-
 }
 
+
 /* width */
+
 ::-webkit-scrollbar {
     width: 10px;
-   
-  }
+}
 
-  /* Track */
-  ::-webkit-scrollbar-track {
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
     background-color: var(--color-carousel-dark);
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #82384b; 
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #82384b;
     border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #4d1422; 
-  }
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #4d1422;
+}
 
 * {
     margin: 0;
@@ -44,7 +50,7 @@ body {
 }
 
 
-
+/* HEADER */
 
 header {
     background-color: var(--color-secondary);
@@ -54,7 +60,6 @@ header {
     justify-content: center;
     height: 90px;
     box-shadow: 0px 4px 20px 0px var(--color-shadow);
-
 }
 
 header>div {
@@ -62,10 +67,7 @@ header>div {
     align-items: center;
     justify-content: space-between;
     width: 80vw;
-
-
 }
-
 
 header li {
     list-style: none;
@@ -82,7 +84,6 @@ header ul {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 navbar {
@@ -93,7 +94,6 @@ navbar {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 navbar>div {
@@ -110,7 +110,9 @@ navbar>div div {
     align-items: center;
 }
 
+
 /* Filtro NAVBAR */
+
 #genre-filter {
     height: 30px;
     width: 300px;
@@ -134,6 +136,7 @@ navbar>div div {
 
 
 /* Filtro de preço */
+
 #price-filter {
     -webkit-appearance: none;
     appearance: none;
@@ -160,9 +163,65 @@ navbar>div div {
     border: none
 }
 
+
 /* Corpo */
-main{
+
+main {
     height: 150vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    height: 50vh;
+    width: 74%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    /* background-color: blueviolet; */
+}
+
+.glide__slide div {
+    width: 17.5vw;
+    /* background-color: var(--color-dark); */
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1500px) {
+    .glide__slide div img {
+        height: 35vh;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .glide__slide div {
+        width: 23vw;
+    }
+    .glide__slide div img {
+        height: 35vh;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .glide__slide div {
+        width: 34vw;
+    }
+    .glide__slide div img {
+        height: 35vh;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .glide__slide div {
+        width: 33vw;
+    }
+    .glide__slide div img {
+        height: 22vh;
+    }
 }
 
 
@@ -176,7 +235,7 @@ footer {
     height: 200px;
 }
 
-footer > div{
+footer>div {
     width: 90vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -193,24 +252,24 @@ footer label {
     font-size: 2em;
 }
 
-#footer-contact{
+#footer-contact {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-#footer-contact div{
+#footer-contact div {
     display: flex;
     align-items: center;
 }
 
-footer > div > div{
+footer>div>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#footer-contact > div{
+#footer-contact>div {
     /* border: solid 2px cyan; */
     width: 45%;
     display: flex;
@@ -218,11 +277,11 @@ footer > div > div{
     margin: 7px;
 }
 
-#footer-contact div svg{
+#footer-contact div svg {
     fill: var(--color-icons)
 }
 
-footer div div ul li span{
+footer div div ul li span {
     font-family: 'Marcellus SC', serif;
 }
 
@@ -231,22 +290,22 @@ footer div div ul li {
     line-height: 2em;
 }
 
-#footer-language{
+#footer-language {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#footer-language label{
+#footer-language label {
     font-family: 'Dosis', sans-serif;
 }
 
-#footer-laguage-margin{
+#footer-laguage-margin {
     margin-top: 15px;
 }
 
-#footer-4 img{
+#footer-4 img {
     transform: scale(1.5);
     position: relative;
     top: -128px
